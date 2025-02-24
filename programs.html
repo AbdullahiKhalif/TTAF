@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TTAF- Programs</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      .navbar-brand img {
+        height: 50px;
+      }
+      .carousel-item img {
+        height: 85vh;
+        object-fit: cover;
+      }
+      .home-content {
+        padding: 50px 20px;
+        text-align: center;
+      }
+      footer {
+        color: #fff;
+        padding: 20px;
+      }
+      .social-icons a {
+        margin: 0 10px;
+        color: #fff;
+        font-size: 1.5rem;
+        text-decoration: none;
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success text-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="images/logo.jpg"
+            class="img-fluid rounded"
+            alt="Tabaarak Logo"
+        /></a>
+        <h1 class="fs-4 text-light">Tabaarak Trust Aid Foundation (TTAF)</h1>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./what-we-do.html"
+                >What We Do</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./programs.html">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./about-us.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Programs Carousel -->
+    <section id="programs" class="container py-2">
+      <div
+        id="carouselExample"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="1000"
+      >
+        <div class="carousel-inner">
+          <script>
+            for (let i = 1; i <= 41; i++) {
+              document.write(`<div class="carousel-item ${
+                i === 1 ? "active" : ""
+              }">
+              <img src="images/G${i}.JPG" class="d-block w-100" alt="Program Image ${i}">
+            </div>`);
+            }
+          </script>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center bg-success">
+      <p>&copy; 2025 Tabaarak Trust Aid Foundation. All rights reserved.</p>
+      <nav>
+        <a href="./index.html" class="text-light">Home</a> |
+        <a href="./what-we-do.html" class="text-light">What We Do</a> |
+        <a href="./programs.html" class="text-light">Programs</a> |
+        <a href="./about-us.html" class="text-light">About</a> |
+        <a href="./contact.html" class="text-light">Contact</a>
+      </nav>
+      <div class="social-icons mt-3">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-youtube"></a>
+        <a href="#" class="fab fa-whatsapp"></a>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
